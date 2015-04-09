@@ -20,3 +20,6 @@ EXTRA_ARGS="-b=bridge0"
 DOCKER_HOST="-H unix:// -H tcp://0.0.0.0:2375"
 EOF
 
+# start docker
+/etc/init.d/docker start
+
