@@ -17,7 +17,7 @@ ifconfig bridge0 $B2D_IPADDR netmask 255.255.255.0
 # update profile
 cat > /var/lib/boot2docker/profile <<"EOF"
 EXTRA_ARGS="-b=bridge0"
-DOCKER_HOST="-H unix:// -H tcp://0.0.0.0:2375"
+DOCKER_HOST="-H unix:// -H tcp://0.0.0.0:2376"
 EOF
 
 # start docker
